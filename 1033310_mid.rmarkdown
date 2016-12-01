@@ -115,13 +115,15 @@ low <- function (x){
 }
 
 
-MminTemp<- aggregate(TX01 ~ year,data = Q3data, FUN = low )
+MminTemp<- aggregate(TX01 ~ year + month ,data = Q3data, FUN = low )
 
-
+print(MminTemp$month)
 ### 2014-01, 2015-01 coldest
 
-Q3a[3,3]
+
 
 
 ```
 
+##3(f) 請計算 2014 年最熱的月份中，該月的每日最高溫平均為幾度C?
+```{r Q3f}
