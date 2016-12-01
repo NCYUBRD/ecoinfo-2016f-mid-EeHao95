@@ -1,18 +1,6 @@
 # ecoinfo-2016f-mid-EeHao95
-ecoinfo-2016f-mid-EeHao95 created by GitHub Classroom
+ecoinfo-2016f-mid-EeHao95 created by GitHub Classroom<br>
 still working........
 keep going........
 
 <br></br>
-<marquee>
-
-跑馬燈
-
-
-
-</marquee>
-
-
-
-
-
