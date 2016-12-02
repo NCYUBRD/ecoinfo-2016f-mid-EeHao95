@@ -3,7 +3,7 @@ title: "1033310_mid_rmarkdown"
 author: "林宇皓"
 date: "2016年11月29日"
 output: html_document
-setwd('C:/Users/user/Desktop/Exam10')
+setwd('C:/Users/user/Desktop/Exam11')
 ---
 
 #期中考
@@ -195,7 +195,6 @@ Q3g <- aggregate(TX01~month=='2014-07',Q3data,mean_na)
 ##3(h) 請計算每個月的月溫差(每月最高溫減去每月最高溫，取兩年平均)，平均月溫差最大的是哪個月？
 ```{r Q3h}
 #待補
-
 ```
 
 
@@ -203,6 +202,35 @@ Q3g <- aggregate(TX01~month=='2014-07',Q3data,mean_na)
 
 ##四. 請計算 Table 2 中的下列各子題 (30%)
 ##a) 請計算各島環境因子(total_cover, C, EC, ..., etc.) 的平均、 第一四分位數、中位數、第三四分位數、最大值及最小值以及標準差，並整理成如下表格：
+```{r}
+#將的資料輸入讀取
+sample_data_Penghu <- read.csv('~/Desktop/生態資訊學/Exam10/penghu_env.csv',header = TRUE)
+#各項平均:total_cover
+Ph_mean_total_cover<- mean(sample_data_Penghu$total_cover)
+Ph_mean_total_cover
+#mean C
+Ph_mean_C <-mean(sample_data_Penghu$C)
+Ph_mean_C
+#mean EC
+Ph_mean_EC <-mean(sample_data_Penghu$EC)
+Ph_mean_EC
+#mean K
+Ph_mean_K <-mean(sample_data_Penghu$K)
+Ph_mean_K
+#mean Na
+Ph_mean_Na <-mean(sample_data_Penghu$Na)
+Ph_mean_Na
+#mean N
+Ph_mean_N <-mean(sample_data_Penghu$N)
+Ph_mean_N
+#mean rock_ratio
+Ph_mean_rock_ratio <-mean(sample_data_Penghu$rock_ratio,na.rm = TRUE)
+Ph_mean_rock_ratio
+
+
+```
+
+
 
 ##(b) 請分別列出 C, EC, K, Na, N 最高的五個樣區(plotid)
 ```{r}
